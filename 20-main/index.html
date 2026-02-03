@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <script type="text/babel">
+
+        function MyHeader() {
+
+            const myStyleForHeader = {
+                backgroundColor: 'rgb(89, 89, 243)',
+                alignItems: 'center',
+            }
+
+            const myLogo = {
+                width: '10%',
+            }
+
+            const myMenu = {
+                display: 'flex',
+                flexDirection: 'column',
+                textAlign: 'center',
+                gap: '15px',
+            }
+
+            const myA = {
+                textDecoration: 'none',
+                fontSize: "18px",
+                color: "rgb(234, 234, 249)",
+                fontFamily: '"Barlow Condensed", sans-serif'
+            }
+
+            const myTitle = {
+                fontSize: "36px",
+                color: 'rgb(239, 239, 249)',
+                fontFamily: '"Oswald", sans-serif'
+            }
+
+            const myHeaderBlock = {
+                width: "1400px",
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                backgroundColor: 'rgb(89, 89, 243)',
+                alignItems: 'center',
+                marginRight: "auto",
+                marginLeft: "auto",
+            }
+
+            return <header style={myStyleForHeader}>
+                <div style={myHeaderBlock}>
+                    <img src="./photo/l11-removebg-preview.png" alt="logo" style={myLogo}></img>
+                    <h1 style={myTitle}>Gaming Time</h1>
+                    <div style={myMenu}>
+                        <a href="" style={myA}>Main</a>
+                        <a href="" style={myA}>Discounts</a>
+                        <a href="" style={myA}>Contacts</a>
+                    </div>
+                </div>
+            </header>
+        }
+
+        function MyList() {
+
+            const myListBlock = {
+                width: '25%',
+                backgroundColor: 'rgb(37, 37, 102)',
+                textAlign: 'center',
+                minHeight: '86.2vh'
+            }
+
+            const myA = {
+                textDecoration: 'none',
+                color: "rgb(234, 234, 249)",
+                fontSize: '20px',
+                fontFamily: '"Barlow Condensed", sans-serif'
+            }
+
+            const myH2 = {
+                padding: "120px 15px",
+                fontSize: '30px',
+                color: 'rgb(239, 239, 249)',
+                fontFamily: '"Oswald", sans-serif'
+            }
+
+            const myLi = {
+                paddingBottom: '50px',
+            }
+
+            return <div style={myListBlock}>
+                <h2 style={myH2}>Catalog</h2>
+                <ul>
+                    <li style={myLi} ><a href="" style={myA}>New Games</a></li>
+                    <li style={myLi}><a href="" style={myA}>Popular Games</a></li>
+                    <li style={myLi}><a href="" style={myA}>Adventurous Games</a></li>
+                    <li style={myLi}><a href="" style={myA}>Horror Games</a></li>
+                    <li style={myLi}><a href="" style={myA}>Online Games</a></li>
+                </ul>
+            </div>
+        }
+
+        function MyCard1() {
+
+            const myCard1 = {
+                width: "400px",
+                alignItems: "center",
+                backgroundColor: 'rgb(37, 37, 102)',
+                textAlign: "center",
+                marginLeft: "240px",
+                marginTop: "8%"
+            }
+
+            const myGamePhoto = {
+                width: "400px"
+            }
+
+            const blockforCard = {
+                display: 'flex',
+                width: "140px",
+                flexDirection: 'row',
+                alignItems: "center",
+                justifyContent: 'space-between',
+                marginRight: "auto",
+                marginLeft: "auto",
+                marginTop: "20px",
+                paddingBottom: "16px"
+            }
+
+            const textForCard = {
+                fontSize: "26px",
+                paddingTop: "10px",
+                color: "rgb(234, 234, 249)",
+                fontFamily: '"Oswald", sans-serif'
+            }
+
+            const costs = {
+                fontSize: "22px",
+                color: "rgb(239, 239, 249)",
+                fontFamily: '"Barlow Condensed", sans-serif'
+            }
+
+            const myButton = {
+                fontSize: "18px",
+                padding: "3px",
+                cursor: "pointer",
+                backgroundColor: "rgb(89, 89, 243)",
+                border: "0",
+                borderRadius: "6px",
+                color: 'rgb(239, 239, 249)',
+                fontFamily: '"Barlow Condensed", sans-serif'
+            }
+
+            return <div style={myCard1}>
+                <img src="./photo/game1.png" alt="game1" style={myGamePhoto}></img>
+                <h3 style={textForCard}>Clair Obscur: Expedition 33</h3>
+                <div style={blockforCard}>
+                    <h4 style={costs}>45$</h4>
+                    <button style={myButton}>Buy</button>
+                </div>
+            </div>
+        }
+
+        function MyCard2() {
+
+            const myCard2 = {
+                width: "400px",
+                alignItems: "center",
+                backgroundColor: 'rgb(37, 37, 102)',
+                textAlign: "center",
+                marginLeft: "240px",
+                marginTop: "8%"
+            }
+
+            const myGamePhoto2 = {
+                width: "400px"
+            }
+
+            const blockforCard = {
+                display: 'flex',
+                width: "140px",
+                flexDirection: 'row',
+                alignItems: "center",
+                justifyContent: 'space-between',
+                marginRight: "auto",
+                marginLeft: "auto",
+                marginTop: "20px",
+                paddingBottom: "16px"
+            }
+
+            const textForCard = {
+                fontSize: "26px",
+                paddingTop: "10px",
+                color: "rgb(234, 234, 249)",
+                fontFamily: '"Oswald", sans-serif'
+            }
+
+            const costs = {
+                fontSize: "22px",
+                color: "rgb(239, 239, 249)",
+                fontFamily: '"Barlow Condensed", sans-serif'
+            }
+
+            const myButton = {
+                fontSize: "18px",
+                padding: "3px",
+                cursor: "pointer",
+                backgroundColor: "rgb(89, 89, 243)",
+                border: "0",
+                borderRadius: "6px",
+                color: 'rgb(239, 239, 249)',
+                fontFamily: '"Barlow Condensed", sans-serif'
+            }
+
+            return <div style={myCard2}>
+                <img src="./photo/game2.png" alt="game1" style={myGamePhoto2}></img>
+                <h3 style={textForCard}>ARC Raiders</h3>
+                <div style={blockforCard}>
+                    <h4 style={costs}>35$</h4>
+                    <button style={myButton}>Buy</button>
+                </div>
+            </div>
+        }
+
+        function MainContent() {
+            const myContainer = {
+                display: 'flex',
+                flexDirection: 'row',
+                alignItems: 'flex-start'
+            }
+
+            return <div style={myContainer}>
+                <MyList />
+                <MyCard1 />
+                <MyCard2 />
+            </div>
+        }
+
+        let div = document.getElementsByTagName("body")[0];
+        const root = ReactDOM.createRoot(div);
+        root.render(
+            <>
+                <MyHeader />
+                <MainContent />
+            </>
+        )
+
+    </script>
+
+</body>
+
+</html>

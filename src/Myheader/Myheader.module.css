@@ -1,1 +1,39 @@
-.Myheader {}
+.Myheader {
+    background-color: rgb(89, 89, 243);
+    align-items: center;
+}
+
+#mylogo {
+    width: 10%;
+}
+
+.myHeaderBlock {
+    width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(89, 89, 243);
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.myTitle {
+    font-size: 36px;
+    color: rgb(239, 239, 249);
+    font-family: "Oswald", sans-serif;
+}
+
+.myMenu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.myA {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(234, 234, 249);
+    font-family: "Barlow Condensed", sans-serif;
+}

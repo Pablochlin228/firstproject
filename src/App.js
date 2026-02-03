@@ -5,6 +5,7 @@ function App() {
   return (
     <div>
       <Myheader></Myheader>
+      <MyList></MyList>
     </div>
   );
 }
