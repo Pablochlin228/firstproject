@@ -1,11 +1,12 @@
 import './App.css';
 import Myheader from './Myheader/Myheader';
+import MainContent from './MainContent/MainContent';
 
 function App() {
   return (
     <div>
       <Myheader></Myheader>
-      <MyList></MyList>
+      <MainContent></MainContent>
     </div>
   );
 }
